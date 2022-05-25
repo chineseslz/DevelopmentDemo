@@ -29,7 +29,7 @@ public class MyBatisTest {
         //获取mapper接口对象  (获取usermapper实现类对象(实例))
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        final List<User> list = mapper.getUserAll();
+        List<User> list = mapper.getUserAll();
 
         list.forEach(user -> System.out.println(user));
 
