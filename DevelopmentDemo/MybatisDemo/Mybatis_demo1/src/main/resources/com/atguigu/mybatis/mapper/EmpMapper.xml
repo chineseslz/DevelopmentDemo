@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.atguigu.mybatis.mapper.EmpMapper">
+
+    <resultMap id="empResultMap" type="Emp">
+        <id property="eid" column="eid"></id>
+        <result property="empName" column="empName"></result>
+        <result property="age" column="age"></result>
+        <result property="sex" column="sex"></result>
+        <result property="email" column="email"></result>
+    </resultMap>
+
+    <select id="getAllEmp" resultMap="empResultMap">
+        select * from emp
+    </select>
+
+    <!--处理多对一的关系方式一：级联属性赋值-->
+    <resultMap id="empAndDeptResultMapOne" type="Emp">
+        <id property="eid" column="eid"></id>
+        <result property="empName" column="empName"></result>
+        <result property="age" column="age"></result>
+        <result property="sex" column="sex"></result>
+        <result property="email" column="email"></result>
+        <result property="dept.did" column="did"></result>
+        <result property="dept.deptName" column="deptName"></result>
+    </resultMap>
+    <!--处理多对一的关系方式二：association-->
+    <resultMap id="empAndDeptResultMapTwo" type="Emp">
+        <id property="eid" column="eid"></id>
+        <result property="empName" column="empName"></result>
+        <result property="age" column="age"></result>
+        <result property="sex" column="sex"></result>
+        <result property="email" column="email"></result>
+        <!--
+        association：处理多对一的映射关系
+        property：需要处理多的映射关系的属性名
+        javaType：该属性的类型
+        -->
+        <association property="dept" javaType="Dept">
+            <id property="did" column="did"></id>
+            <result property="deptName" column="deptName"></result>
+        </association>
+    </resultMap>
+    <!--处理多对一的关系方式三：分步处理-->
+    <resultMap id="empAndDeptResultMapThree" type="Emp">
+        <id property="eid" column="eid"></id>
+        <result property="empName" column="empName"></result>
+        <result property="age" column="age"></result>
+        <result property="sex" column="sex"></result>
+        <result property="email" column="email"></result>
+        <!--
+        select：设置分布查询的sql的唯一标识（namespace.SQLId 或者 mapper接口的全类名.方法名）
+        column：设置分步查询的条件
+        -->
+        <association property="dept" select="com.atguigu.mybatis.mapper.DeptMapper.getEmpAndDeptBystep" column="did"></association>
+    </resultMap>
+
+    <select id="getEmpAndDept" resultMap="empAndDeptResultMapTwo">
+        select * from emp left join dept on emp.did = dept.did where emp.eid=1
+    </select>
+
+    <select id="getEmpAndDeptByStepOne" resultMap="empAndDeptResultMapThree">
+        select * from emp where eid = #{eid}
+    </select>
+
+
+</mapper>

@@ -8,6 +8,11 @@
     <!--配置jdbc文件源-->
     <properties resource="jdbc.properties" />
 
+    <!--设置Mybatis的全局配置-->
+    <settings>
+        <!--将_下划线自动映射为驼峰-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
 
     <!--设置类型别名-->
     <typeAliases>
