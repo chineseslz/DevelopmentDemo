@@ -71,12 +71,11 @@ public class Emp {
     public Emp() {
     }
 
-    public Emp(Integer eid, String empName, Integer age, String sex, String email, Dept dept) {
+    public Emp(Integer eid, String empName, Integer age, String sex, String email) {
         this.eid = eid;
         this.empName = empName;
         this.age = age;
         this.sex = sex;
         this.email = email;
-        this.dept = dept;
     }
 }

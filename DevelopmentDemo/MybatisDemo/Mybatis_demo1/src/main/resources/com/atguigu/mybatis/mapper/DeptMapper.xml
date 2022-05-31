@@ -9,4 +9,23 @@
         select * from dept where did = #{did}
     </select>
 
+    <resultMap id="deptAndEmpResultMap" type="Dept">
+        <id property="did" column="did"></id>
+        <result property="deptName" column="deptName"></result>
+        <!--collection：处理一对多的关系-->
+        <collection property="emps" ofType="Emp">
+            <id property="eid" column="eid"></id>
+            <result property="empName" column="empName"></result>
+            <result property="age" column="age"></result>
+            <result property="sex" column="sex"></result>
+            <result property="email" column="email"></result>
+            <result property="dept.did" column="did"></result>
+            <result property="dept.deptName" column="deptName"></result>
+        </collection>
+    </resultMap>
+
+    <select id="getDeptAndEmp" resultMap="deptAndEmpResultMap">
+        select * from dept left join emp on dept.did = emp.did where dept.did = #{did}
+    </select>
+
 </mapper>

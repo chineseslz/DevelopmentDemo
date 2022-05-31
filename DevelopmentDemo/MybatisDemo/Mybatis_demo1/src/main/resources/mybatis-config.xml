@@ -12,6 +12,8 @@
     <settings>
         <!--将_下划线自动映射为驼峰-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--开启延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
     </settings>
 
     <!--设置类型别名-->
