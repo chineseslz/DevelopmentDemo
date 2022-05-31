@@ -20,8 +20,11 @@
 <!--            and email = #{email}-->
 <!--        </if>-->
 <!--    </select>-->
+    
+    <sql id="empColumns">eid,empName,age,sex,email</sql>
+    
     <select id="getEmpByCondition" resultType="Emp">
-        select * from emp
+        select <include refid="empColumns"></include> from emp
         <where>
             <if test="empName != null and empName != '' ">
                 and empName = #{empName}

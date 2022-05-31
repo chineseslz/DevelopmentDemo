@@ -29,6 +29,9 @@ import java.util.List;
  *  separator：循环体之间的分隔符
  *  open:foreach：标签所循环的所有内容的开始符
  *  close:foreach标签所循环的所有内容的结束符
+ *  6、SQL标签
+ *  设置SQL片段：<sql id="empColumns">eid,empName,age,sex,email</sql>
+ *  引用SQL片段：<include refid="empColumns"></include>
  */
 
 
@@ -56,7 +59,7 @@ public class DynamicSQLTest {
 
     @Test
     public void getEmpByChoose(){
-        List<Emp> list = mapper.getEmpByChoose(new Emp(null,"",null,"",""));
+        List<Emp> list = mapper.getEmpByCondition(new Emp(null,"sss",null,"",""));
         System.out.println(list);
 
     }
