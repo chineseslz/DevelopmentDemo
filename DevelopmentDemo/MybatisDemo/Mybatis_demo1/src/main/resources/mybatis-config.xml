@@ -29,6 +29,10 @@
 
     </typeAliases>
 
+    <plugins>
+        <!--设置分页插件-->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
 
     <!--配置数据库连接的环境
         属性：
