@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--创建学生对象
+    等同于Student student = new Student();
+    id：就是创建的对象的名称
+    class：就是创建对象的类型，底层通过反射构建对象
+    -->
+<!--    <bean id = "stu" class="com.atdonglijiedian.pojo.Student">-->
+<!--        <property name="name" value="张三"></property>-->
+<!--        <property name="age" value="18"></property>-->
+<!--        <property name="school" ref="school"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="school" class="com.atdonglijiedian.pojo.School">-->
+<!--        <property name="name" value="南理工"></property>-->
+<!--        <property name="address" value="秦淮区"></property>-->
+<!--    </bean>-->
+
+    <bean
+
+
+</beans>

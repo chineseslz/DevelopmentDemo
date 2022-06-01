@@ -8,6 +8,8 @@
       <list>
         <option value="$PROJECT_DIR$/DevelopmentDemo/IFirstDemo/pom.xml" />
         <option value="$PROJECT_DIR$/DevelopmentDemo/MybatisDemo/Mybatis_demo1/pom.xml" />
+        <option value="$PROJECT_DIR$/DevelopmentDemo/Mybatis_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/DevelopmentDemo/Spring_demo/pom.xml" />
       </list>
     </option>
   </component>
