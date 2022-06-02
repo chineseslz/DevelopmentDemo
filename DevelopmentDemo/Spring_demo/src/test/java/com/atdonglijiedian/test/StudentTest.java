@@ -10,9 +10,10 @@ public class StudentTest {
     @Test
     public void testStudent(){
         ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-        Student stu = (Student) ac.getBean("stu");
+        Student stu = (Student) ac.getBean("student");
         System.out.println(stu);
 
     }
 
 }
+

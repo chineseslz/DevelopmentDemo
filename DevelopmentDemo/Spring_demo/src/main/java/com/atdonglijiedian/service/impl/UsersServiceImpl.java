@@ -1,7 +1,6 @@
 package com.atdonglijiedian.service.impl;
 
 import com.atdonglijiedian.dao.UsersMapper;
-import com.atdonglijiedian.dao.UsersMapperImpl;
 import com.atdonglijiedian.pojo.Users;
 import com.atdonglijiedian.service.UsersService;
 
@@ -11,7 +10,11 @@ import com.atdonglijiedian.service.UsersService;
 
 public class UsersServiceImpl implements UsersService {
 
-    private UsersMapper usersMapper = new UsersMapperImpl();
+    private UsersMapper usersMapper;
+
+    public void setUsersMapper(UsersMapper usersMapper) {
+        this.usersMapper = usersMapper;
+    }
 
     @Override
     public int insert(Users users) {

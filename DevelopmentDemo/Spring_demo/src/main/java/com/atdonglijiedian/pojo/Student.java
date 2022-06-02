@@ -1,40 +1,20 @@
 package com.atdonglijiedian.pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component //交给spring创建对象，在容器启动是创建
 public class Student {
+    @Value("slz")
     private String name;
+    @Value("23")
     private int age;
 
+    @Autowired  //引用类型按类型注入    同源类型：1）相同类型  2）父子关系  3）接口实现关系
+    @Qualifier("school")   //和注入类型的@Component注解的名字一致
     private School school;
-
-    public Student(String name, int age, School school) {
-        this.name = name;
-        this.age = age;
-        this.school = school;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public School getSchool() {
-        return school;
-    }
-
-    public void setSchool(School school) {
-        this.school = school;
-    }
 
     @Override
     public String toString() {
@@ -46,5 +26,6 @@ public class Student {
     }
 
     public Student() {
+        System.out.println("Student的无参构造方法");
     }
 }

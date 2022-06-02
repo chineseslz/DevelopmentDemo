@@ -3,13 +3,16 @@ package com.atdonglijiedian.test;
 import com.atdonglijiedian.controller.UsersController;
 import com.atdonglijiedian.pojo.Users;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class UsersTest {
     @Test
     public static void main(String[] args) {
 
-        UsersController usersController = new UsersController();
-        int num = usersController.insert(new Users(1,"asd",18));
+        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UsersController usersController = (UsersController) ac.getBean("uController");
+        int num = usersController.insert(new Users(200,"slz",23));
         System.out.println(num);
 
     }

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--添加包扫描-->
+    <context:component-scan base-package="com.atdonglijiedian.pojo"></context:component-scan>
+
+
+
+
 
 
     <!--创建学生对象
@@ -20,7 +29,14 @@
 <!--        <property name="address" value="秦淮区"></property>-->
 <!--    </bean>-->
 
-    <bean
+<!--    <bean id="uMapper" class="com.atdonglijiedian.dao.UsersMapperImpl">-->
 
+<!--    </bean>-->
+<!--    <bean id="uService" class="com.atdonglijiedian.service.impl.UsersServiceImpl">-->
+<!--        <property name="usersMapper" ref="uMapper"></property>-->
+<!--    </bean>-->
+<!--    <bean id="uController" class="com.atdonglijiedian.controller.UsersController">-->
+<!--        <property name="usersService" ref="uService"></property>-->
+<!--    </bean>-->
 
 </beans>
