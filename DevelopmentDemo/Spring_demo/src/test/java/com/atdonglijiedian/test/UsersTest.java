@@ -10,9 +10,9 @@ public class UsersTest {
     @Test
     public static void main(String[] args) {
 
-        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-        UsersController usersController = (UsersController) ac.getBean("uController");
-        int num = usersController.insert(new Users(200,"slz",23));
+        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContextTotal.xml");
+        UsersController usersController = (UsersController) ac.getBean("usersController");
+        int num = usersController.insert(new Users(001, "slz", 23));
         System.out.println(num);
 
     }

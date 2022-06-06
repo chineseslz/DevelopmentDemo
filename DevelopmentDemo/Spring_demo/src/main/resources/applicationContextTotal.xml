@@ -5,10 +5,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <!--添加包扫描-->
-    <context:component-scan base-package="com.atdonglijiedian.pojo"></context:component-scan>
+<!--    &lt;!&ndash;添加包扫描&ndash;&gt;-->
+<!--    <context:component-scan base-package="com.atdonglijiedian.controller"></context:component-scan>-->
+<!--    <context:component-scan base-package="com.atdonglijiedian.service.impl"></context:component-scan>-->
+<!--    <context:component-scan base-package="com.atdonglijiedian.dao"></context:component-scan>-->
 
 
+    <import resource="applicationContext_*.xml"></import>
 
 
 
