@@ -5,13 +5,9 @@
        xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <!--创建业务对象-->
-    <bean id="someService" class="aop.aop01.SomeServiceImpl"></bean>
+    <context:component-scan base-package="aop.aop01"></context:component-scan>
 
-    <!--创建切面对象-->
-    <bean id="myAspect" class="aop.aop01.MyAspect"></bean>
-
-    <!--绑定-->
-    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+    <!--绑定   proxy-target-class="true"：开启接口实现类的转换,默认是jdk动态代理，开启后设置为CGLib子类代理-->
+    <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
 
 </beans>
