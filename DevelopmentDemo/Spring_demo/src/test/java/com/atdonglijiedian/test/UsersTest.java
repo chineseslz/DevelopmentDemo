@@ -8,12 +8,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class UsersTest {
     @Test
-    public static void main(String[] args) {
+    public  void testUsers() {
 
-        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContextTotal.xml");
-        UsersController usersController = (UsersController) ac.getBean("usersController");
-        int num = usersController.insert(new Users(001, "slz", 23));
-        System.out.println(num);
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContextTotal.xml");
+//        UsersController usersController = (UsersController) ac.getBean("usersController");
+//        int num = usersController.insert(new Users(001, "slz", 23));
+//        System.out.println(num);
 
     }
 }
