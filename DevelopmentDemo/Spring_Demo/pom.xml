@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.atdonglijiedian</groupId>
-    <artifactId>Spring_demo</artifactId>
+    <artifactId>Spring_Demo</artifactId>
     <version>1.0</version>
 
-    <name>Spring_demo</name>
+    <name>Spring_Demo</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
