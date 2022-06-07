@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring_SM_Demo" />
-        <module name="Spring_Demo" />
         <module name="Mybatis_Demo" />
+        <module name="SpringMVC_Demo" />
+        <module name="Spring_Demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +17,8 @@
       <module name="Mybatis_Demo" target="8" />
       <module name="Spring_Demo" target="1.8" />
       <module name="Spring_SM_Demo" target="1.8" />
+      <module name="Spring_SM_Demo (1) (org.example)" target="1.8" />
+      <module name="SpringMVC_Demo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
