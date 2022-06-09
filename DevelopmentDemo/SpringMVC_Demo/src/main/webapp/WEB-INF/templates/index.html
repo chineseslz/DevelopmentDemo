@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <h1>首页</h1>
+    <a th:href="@{/hello/hello}">HelloWorld</a><br>
+    <a th:href="@{/test}">测试method属性->get</a><br>
+    <a th:href="@{/params(username='slz',age=23)}">测试params->get</a><br>
+    <form th:action="@{/test}" method="post">
+        <input type="submit" value="method属性->post">
+    </form>
+</body>
+</html>
