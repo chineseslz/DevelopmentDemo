@@ -31,7 +31,13 @@
         </property>
     </bean>
 
+    <!--
+	path：设置处理的请求地址
+	view-name：设置请求地址所对应的视图名称
+-->
+    <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
 
-
+    <!--开启mvc的注解驱动 为view-controller设定的-->
+    <mvc:annotation-driven/>
 
 </beans>
