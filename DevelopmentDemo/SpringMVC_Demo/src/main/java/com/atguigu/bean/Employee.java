@@ -1,5 +1,8 @@
 package com.atguigu.bean;
 
+import org.springframework.stereotype.Component;
+
+
 public class Employee {
     private Integer id;
     private String lastName;

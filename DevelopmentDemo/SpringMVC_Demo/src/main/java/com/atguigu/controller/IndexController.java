@@ -29,4 +29,9 @@ public class IndexController {
         return "hello";
     }
 
+    @RequestMapping("/employee_list")
+    private String employee_list(){
+        return "employee_list";
+    }
+
 }
