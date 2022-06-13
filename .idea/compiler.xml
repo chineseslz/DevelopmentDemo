@@ -9,7 +9,6 @@
         <module name="Spring_SM_Demo" />
         <module name="Mybatis_Demo" />
         <module name="SpringMVC_Demo" />
-        <module name="Springboot-Demo" />
         <module name="Spring_Demo" />
       </profile>
     </annotationProcessing>
