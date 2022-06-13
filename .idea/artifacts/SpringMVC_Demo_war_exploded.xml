@@ -11,7 +11,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="SpringMVC_Demo" />
+          <element id="module-output" name="SpringMvc_Demo" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.1" />
@@ -32,9 +32,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/DevelopmentDemo/SpringMVC_Demo/target/SpringMVC_Demo-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/DevelopmentDemo/SpringMvc_Demo/target/SpringMVC_Demo-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="SpringMVC_Demo/web/Web" />
+      <element id="javaee-facet-resources" facet="SpringMvc_Demo/web/Web" />
     </root>
   </artifact>
 </component>
