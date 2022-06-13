@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/SpringMVC_Demo/SpringMVC_Demo.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/SpringMVC_Demo/SpringMVC_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/Spring_demo/Spring_Demo.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/Spring_demo/Spring_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/Spring_SM_Demo/Spring_SM_Demo.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/Spring_SM_Demo/Spring_SM_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/Springboot-Demo/Springboot-Demo.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/Springboot-Demo/Springboot-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ideaprojects.iml" filepath="$PROJECT_DIR$/.idea/ideaprojects.iml" />
     </modules>
   </component>

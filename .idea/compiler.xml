@@ -9,6 +9,7 @@
         <module name="Spring_SM_Demo" />
         <module name="Mybatis_Demo" />
         <module name="SpringMVC_Demo" />
+        <module name="Springboot-Demo" />
         <module name="Spring_Demo" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="Spring_Demo" target="1.8" />
       <module name="Spring_SM_Demo" target="1.8" />
       <module name="Spring_SM_Demo (1) (org.example)" target="1.8" />
+      <module name="Springboot-Demo" target="1.8" />
       <module name="SpringMVC_Demo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
