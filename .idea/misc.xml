@@ -18,5 +18,8 @@
       </list>
     </option>
   </component>
+  <component name="ProjectResources">
+    <resource url="xmlns=&quot;http://www.springframework.org/schema/beans&quot;" location="$PROJECT_DIR$/DevelopmentDemo/SpringMVC_Demo/src/main/resources/springMVC.xml" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
