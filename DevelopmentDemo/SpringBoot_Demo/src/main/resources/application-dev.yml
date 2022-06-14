@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /myboot
+
+school:
+  name: 百度
+  website: www.baidu.com
+  address: 南京的大学区
+
+site: www.baidu.com
