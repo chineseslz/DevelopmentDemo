@@ -10,3 +10,9 @@ school:
   address: 南京的大学区
 
 site: www.baidu.com
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://api.lemonban.com:3306/test
+    username: future
+    password: 123456
