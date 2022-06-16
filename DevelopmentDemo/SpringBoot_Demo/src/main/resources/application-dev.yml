@@ -3,6 +3,7 @@ server:
   servlet:
     context-path: /myboot
 
+#  @ConfigurationProperties(prefix = "school")   赋值
 school:
   name: 百度
   website: www.baidu.com
