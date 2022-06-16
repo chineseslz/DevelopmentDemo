@@ -9,7 +9,6 @@ school:
   website: www.baidu.com
   address: 南京的大学区
 
-site: www.baidu.com
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver

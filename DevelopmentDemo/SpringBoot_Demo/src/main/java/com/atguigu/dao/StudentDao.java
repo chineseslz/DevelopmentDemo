@@ -10,4 +10,5 @@ import org.apache.ibatis.annotations.Param;
 @Mapper
 public interface StudentDao {
     Student selectById(@Param("stuId")Integer id);
+
 }
