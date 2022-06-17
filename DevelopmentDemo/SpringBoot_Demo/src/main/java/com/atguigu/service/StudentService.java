@@ -6,5 +6,6 @@ public interface StudentService  {
 
     Student selectById(Integer id);
 
+    int insertStudent(Student student);
 
 }

@@ -9,5 +9,8 @@
         select * from students where id = #{stuId}
     </select>
 
+    <insert id="insertStudent">
+        insert into students(name,age) values (#{name},#{age})
+    </insert>
 
 </mapper>

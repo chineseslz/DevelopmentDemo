@@ -15,3 +15,19 @@ spring:
     url: jdbc:mysql://api.lemonban.com:3306/test
     username: future
     password: 123456
+  #启用支持put,delete
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+mybatis:
+  #指定mapper文件的位置
+  mapper-locations: classpath:mapper/*.xml
+  #指定mybatis的日志
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+
