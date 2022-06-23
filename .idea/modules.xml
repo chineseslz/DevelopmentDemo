@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/001-link-userservice-provider/001-link-userservice-provider.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/001-link-userservice-provider/001-link-userservice-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/002-link-consumer/002-link-consumer.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/002-link-consumer/002-link-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/Mybatis_Demo/Mybatis_Demo.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/Mybatis_Demo/Mybatis_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/SpringMvc_Demo/SpringMvc_Demo.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/SpringMvc_Demo/SpringMvc_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/Spring_demo/Spring_Demo.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/Spring_demo/Spring_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/Spring_SM_Demo/Spring_SM_Demo.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/Spring_SM_Demo/Spring_SM_Demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/ideaprojects.iml" filepath="$PROJECT_DIR$/.idea/ideaprojects.iml" />
       <module fileurl="file://$PROJECT_DIR$/DevelopmentDemo/SpringBoot_Demo/springboot_demo.iml" filepath="$PROJECT_DIR$/DevelopmentDemo/SpringBoot_Demo/springboot_demo.iml" />
     </modules>
   </component>
