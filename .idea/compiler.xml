@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot_demo" />
         <module name="Mybatis_Demo" />
+        <module name="Interface_Api_Demo" />
         <module name="Spring_SM_Demo" />
         <module name="SpringMvc_Demo" />
         <module name="001-link-userservice-provider" />
@@ -19,6 +20,7 @@
       <module name="001-link-userservice-provider" target="1.8" />
       <module name="002-link-consumer" target="1.8" />
       <module name="IFirstDemo" target="8" />
+      <module name="Interface_Api_Demo" target="1.5" />
       <module name="Mybatis_Demo" target="8" />
       <module name="Spring_Demo" target="1.8" />
       <module name="Spring_SM_Demo" target="1.8" />

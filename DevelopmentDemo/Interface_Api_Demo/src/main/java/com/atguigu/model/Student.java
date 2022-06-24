@@ -1,9 +1,10 @@
-package com.atguigu.vo;
+package com.atguigu.model;
 
 import java.io.Serializable;
 
 public class Student implements Serializable {
-    private static final long serialVersionUID = 2391772891318934059L;
+    private static final long serialVersionUID = -5721473800543151572L;
+
     private Integer id;
     private String name;
     private Integer age;
@@ -17,13 +18,8 @@ public class Student implements Serializable {
                 '}';
     }
 
-    public Student() {
-    }
-
-    public Student(Integer id, String name, Integer age) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     public Integer getId() {
@@ -49,5 +45,4 @@ public class Student implements Serializable {
     public void setAge(Integer age) {
         this.age = age;
     }
-
 }
