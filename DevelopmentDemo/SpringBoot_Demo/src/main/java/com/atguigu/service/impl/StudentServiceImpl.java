@@ -8,15 +8,24 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
+
+//@DubboService(interfaceClass = StudentService.class,version = "1.0")
 @Service
 public class StudentServiceImpl implements StudentService {
+
 
     @Resource
     private StudentDao studentDao;
 
     @Override
     public Student selectById(Integer id) {
-        return studentDao.selectById(id);
+        Student student = new Student();
+        if (1001==id){
+            student.setId(1001);
+            student.setName("qss");
+            student.setAge(18);
+        }
+        return student;
     }
 
 
@@ -33,5 +42,7 @@ public class StudentServiceImpl implements StudentService {
         System.out.println("执行sql语句");
         return i;
     }
+
+
 
 }

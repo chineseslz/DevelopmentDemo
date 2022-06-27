@@ -8,18 +8,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
-@RestController
+@RestController("/student")
 public class StudentController {
 
     @Resource
     private StudentService studentService;
 
-    @RequestMapping("/student/query")
+    @RequestMapping("/query")
     public String queryStudent(Integer id) {
         return studentService.selectById(id).toString();
     }
 
-    @RequestMapping("/student/add")
+    @RequestMapping("/add")
     public String queryStudent(String name, Integer age) {
         Student s1 = new Student();
         s1.setName(name);

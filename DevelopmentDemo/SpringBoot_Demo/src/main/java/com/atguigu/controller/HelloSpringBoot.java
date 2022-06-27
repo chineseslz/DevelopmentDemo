@@ -23,15 +23,16 @@ public class HelloSpringBoot {
     @Value("${school.name}")
     private String name;
 
+    @Resource
+    private SchoolInfo info;
+
     @RequestMapping("/data")
     @ResponseBody
     public String queryData(){
-        return name;
+        return this.name+this.port;
     }
 
 
-    @Resource
-    private SchoolInfo info;
 
     @RequestMapping("/info")
     @ResponseBody

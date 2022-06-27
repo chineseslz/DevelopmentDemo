@@ -1,5 +1,6 @@
 server:
   port: 8080
+
 #  servlet:
 #    context-path: /myboot
 
@@ -24,6 +25,10 @@ spring:
   redis:
     host: localhost
     port: 6379
+#  #配置dubbo服务名称
+#  application:
+#    name: studentservice-provider
+
 
 mybatis:
   #指定mapper文件的位置
@@ -33,5 +38,14 @@ mybatis:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 
-
-
+#dubbo:
+#  #扫描@DubboService
+#  scan:
+#    base-packages: com.atguigu.service
+#  #配置dubbo协议
+#  protocol:
+#    name: dubbo
+#    port: 20881
+#  #注册中心
+#  registry:
+#    address: zookeeper://localhost:2181
