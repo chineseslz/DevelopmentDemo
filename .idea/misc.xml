@@ -2,6 +2,9 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="" />
+    <file type="web" url="file://$PROJECT_DIR$/DevelopmentDemo/001-link-userservice-provider" />
+    <file type="web" url="file://$PROJECT_DIR$/DevelopmentDemo/002-link-consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/DevelopmentDemo/consumer" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -17,6 +20,9 @@
         <option value="$PROJECT_DIR$/DevelopmentDemo/Spring_demo/pom.xml" />
         <option value="$PROJECT_DIR$/DevelopmentDemo/springboot-fir/pom.xml" />
         <option value="$PROJECT_DIR$/DevelopmentDemo/SpringBoot_Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/DevelopmentDemo/001-link-userservice-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/DevelopmentDemo/002-link-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/DevelopmentDemo/Interface_Api_Demo/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,61 @@
+创建对象的：
+@Controller: 放在类的上面，创建控制器对象，注入到容器中
+@RestController: 放在类的上面，创建控制器对象，注入到容器中。
+             作用：复合注解是@Controller , @ResponseBody, 使用这个注解类的，里面的控制器方法的返回值都是数据
+
+@Service ： 放在业务层的实现类上面，创建service对象，注入到容器
+@Repository : 放在dao层的实现类上面，创建dao对象，放入到容器。 没有使用这个注解，是因为现在使用MyBatis框架，dao对象是MyBatis通过代理生成的。
+                不需要使用@Repository、 所以没有使用。
+@Component:  放在类的上面，创建此类的对象，放入到容器中。
+
+赋值的：
+@Value ： 简单类型的赋值， 例如 在属性的上面使用@Value("李四") private String name
+          还可以使用@Value,获取配置文件者的数据（properties或yml）。
+          @Value("${server.port}") private Integer port
+
+@Autowired: 引用类型赋值自动注入的，支持byName, byType. 默认是byType 。 放在属性的上面，也可以放在构造方法的上面。推荐是放在构造方法的上面
+@Qualifer:  给引用类型赋值，使用byName方式。
+            @Autowird, @Qualifer都是Spring框架提供的。
+
+@Resource ： 来自jdk中的定义， javax.annotation。 实现引用类型的自动注入， 支持byName, byType.
+             默认是byName, 如果byName失败， 再使用byType注入。 在属性上面使用
+
+
+其他：
+@Configuration ： 放在类的上面，表示这是个配置类，相当于xml配置文件
+
+@Bean：放在方法的上面， 把方法的返回值对象，注入到spring容器中。
+
+@ImportResource ： 加载其他的xml配置文件， 把文件中的对象注入到spring容器中
+
+@PropertySource ： 读取其他的properties属性配置文件
+
+@ComponentScan： 扫描器 ，指定包名，扫描注解的
+
+@ResponseBody: 放在方法的上面，表示方法的返回值是数据， 不是视图
+@RequestBody : 把请求体中的数据，读取出来， 转为java对象使用。
+
+@ControllerAdvice:  控制器增强， 放在类的上面， 表示此类提供了方法，可以对controller增强功能。
+
+@ExceptionHandler : 处理异常的，放在方法的上面
+
+@Transcational :  处理事务的， 放在service实现类的public方法上面， 表示此方法有事务
+
+
+SpringBoot中使用的注解
+
+@SpringBootApplication ： 放在启动类上面， 包含了@SpringBootConfiguration
+                          @EnableAutoConfiguration， @ComponentScan
+
+
+
+MyBatis相关的注解
+
+@Mapper ： 放在类的上面 ， 让MyBatis找到接口， 创建他的代理对象
+@MapperScan :放在主类的上面 ， 指定扫描的包， 把这个包中的所有接口都创建代理对象。 对象注入到容器中
+@Param ： 放在dao接口的方法的形参前面， 作为命名参数使用的。
+
+Dubbo注解
+@DubboService: 在提供者端使用的，暴露服务的， 放在接口的实现类上面
+@DubboReference:  在消费者端使用的， 引用远程服务， 放在属性上面使用。
+@EnableDubbo : 放在主类上面， 表示当前引用启用Dubbo功能。
