@@ -1,6 +1,8 @@
 package com.sangeng;
 
+import com.sangeng.entity.Menu;
 import com.sangeng.entity.User;
+import com.sangeng.mapper.MenuMapper;
 import com.sangeng.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +16,8 @@ public class MapperTest {
 
     @Autowired
     private UserMapper userMapper;
-
+    @Autowired
+    private MenuMapper menuMapper;
     @Autowired
     private PasswordEncoder passwordEncoder;
 
@@ -22,7 +25,9 @@ public class MapperTest {
     public void testUserMapper(){
 //        List<User> users = userMapper.selectList(null);
 //        System.out.println(users);
-        System.out.println(passwordEncoder.encode("123456"));
+//        System.out.println(passwordEncoder.encode("123456"));
+        List<Menu> list = menuMapper.selectList(null);
+        System.out.println(list);
     }
 
 }
