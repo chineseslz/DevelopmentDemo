@@ -2,7 +2,6 @@ package com.sangeng.filter;
 
 import com.sangeng.entity.LoginUser;
 import com.sangeng.utils.JwtUtil;
-import com.sangeng.utils.JwtUtils;
 import com.sangeng.utils.RedisCache;
 import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;

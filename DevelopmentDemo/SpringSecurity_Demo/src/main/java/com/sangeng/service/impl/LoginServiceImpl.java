@@ -4,7 +4,6 @@ import com.sangeng.entity.LoginUser;
 import com.sangeng.entity.User;
 import com.sangeng.service.LoginService;
 import com.sangeng.utils.JwtUtil;
-import com.sangeng.utils.JwtUtils;
 import com.sangeng.utils.RedisCache;
 import com.sangeng.utils.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
