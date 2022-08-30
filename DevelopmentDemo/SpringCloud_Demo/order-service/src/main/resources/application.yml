@@ -2,9 +2,9 @@ server:
   port: 8082
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/cloudlesson?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/cloudlesson?serverTimezone=UTC&useSSL=false
     username: root
-    password: 123
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: orderservice
@@ -13,7 +13,7 @@ spring:
       server-addr: localhost:8848
       discovery:
         cluster-name: NJ #集群名称
-        namespace: 1a6149bc-4151-437e-a79e-bf95bfc62ce1
+#        namespace: 1a6149bc-4151-437e-a79e-bf95bfc62ce1
 
 feign:
   client:
